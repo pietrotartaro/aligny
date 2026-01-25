@@ -4,7 +4,7 @@
 
 # aligny
 
-aligny is a front-end only Kanban board designed to keep software teams organized. It runs entirely in the browser and persists data in localStorage.
+[aligny](https://aligny.netlify.app/) is a front-end only Kanban board designed to keep software teams organized. It runs entirely in the browser and persists data in localStorage.
 
 ## Features
 

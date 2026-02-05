@@ -90,6 +90,9 @@ function reducer(state: KanbanState, action: Action): KanbanState {
         const fromColumn = state.board.columns.find((col) => col.taskIds.includes(taskId))
         const toColumn = state.board.columns.find((col) => col.id === columnId)
         if (fromColumn && toColumn) {
+          if (fromColumn.id === toColumn.id) {
+            return { ...state, board: nextBoard }
+          }
           nextBoard = {
             ...nextBoard,
             columns: state.board.columns.map((col) => {
